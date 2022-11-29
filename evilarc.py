@@ -40,7 +40,7 @@ def main(argv=sys.argv):
 	p.add_option('--depth', '-d', type="int", dest="depth", help="Number directories to traverse. Defaults to 8.")
 	p.set_default("depth", 8)
 	p.add_option('--os', '-o', dest="platform", help="OS platform for archive (win|unix). Defaults to win.")
-	p.set_default("platform", "win")
+	p.set_default("platform", "linux")
 	p.add_option('--path', '-p', dest="path", help="Path to include in filename after traversal.  Ex: WINDOWS\\System32\\")	
 	p.set_default("path", "")
 	options, arguments = p.parse_args()
